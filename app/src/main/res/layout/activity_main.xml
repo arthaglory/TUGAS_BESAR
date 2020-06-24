@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" />
+
+
+    <co.mobiwise.library.InteractivePlayerView
+
+        android:id="@+id/ipv"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        app:emptyColor="#aaffffff"
+        app:imageCover="@drawable/imagetest"
+        app:loadedColor="#fff44336"
+        app:selectedAction1="@drawable/shuffle_selected"
+        app:selectedAction2="@drawable/like_selected"
+        app:selectedAction3="@drawable/replay_selected"
+        app:unselectedAction1="@drawable/shuffle_unselected"
+        app:unselectedAction2="@drawable/like_unselected"
+        app:unselectedAction3="@drawable/replay_unselected"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_red"
+        android:text="Play"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Music"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
